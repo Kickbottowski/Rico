@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background: white;
+            text-align: center;
+        }
+        
+        #header {
+            background: white;
+            border-radius: 30px;
+        }
+        
+        #box1,
+        #box2,
+        #box3,
+        #box4 {
+            background: black;
+            color: white;
+            border-radius: 10px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        
+        #box2 {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="header" class="row">
+            <b>
+            <div id="box1" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-success">
+                <h3>Total Recruits</h3>
+                <h1>***</h1>
+            </div>
+            <div id="box2" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-warning">
+                <h3>Open Requirements</h3>
+                <h1>***</h1>
+            </div>
+            <div id="box3" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-danger">
+                <h3>Closing Due</h3>
+                <h1>Req:***</h1>
+            </div>
+            <div id="box4" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h3>Joining awaiting</h3>
+                <h1>***</h1>
+            </div>
+        </b>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
+                <img src="graph.png" class="img-responsive" height="200px" width="450px" alt="graph">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <h3>Open Requirements</h3>
+
+                <h5><a href="#">req:126</a></h5>
+                <h5><a href="#">req:127</a></h5>
+                <h5><a href="#">req:128</a></h5>
+                <h5><a href="#">req:129</a></h5>
+                <h5><a href="#">req:130</a></h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                <img src="https://i.pinimg.com/736x/7c/e1/c9/7ce1c91d610eeb2e87e42a370ac3291b--monthly-calendar--november-calendar.jpg" class="img-responsive" width="450px" height="200px" alt="Image">
+
+            </div>
+            <div>
+                <iframe width="450px" height="200px" src="quicktask.html"></iframe>
+                <button>Add quick note</button>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
