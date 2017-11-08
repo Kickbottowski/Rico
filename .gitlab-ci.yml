@@ -4,9 +4,9 @@ pages:
   - mkdir .public
   - cp -r * .public
   - mv .public public
-  - rm -rf /var/www/cloud.codeants.in/public_html/charan-rico
-  - mkdir /var/www/cloud.codeants.in/public_html/charan-rico
-  - cp -r public/* /var/www/cloud.codeants.in/public_html/charan-rico
+  - rm -rf /var/www/cloud.codeants.in/public_html/ch-rico
+  - mkdir /var/www/cloud.codeants.in/public_html/ch-rico
+  - cp -r public/* /var/www/cloud.codeants.in/public_html/ch-rico
   artifacts:
     paths:
     - public
