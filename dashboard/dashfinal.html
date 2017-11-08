@@ -45,6 +45,21 @@
         #box4 {
             background: rgb(51, 110, 123);
         }
+        
+        table,
+        th,
+        td {
+            border: 3px solid black !important;
+            text-align: center;
+        }
+        
+        .dull {
+            color: silver;
+        }
+        
+        .imp {
+            color: red;
+        }
     </style>
 </head>
 
@@ -114,7 +129,72 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
 
                 <div style="border-radius:10px; background:pink; width:100%; margin-bottom:5%; height:294px;padding:2%; ">
-                    <h1 class="text-center">Calender will be functional in ver 3.0 </h1>
+
+                    <table class="text-center  table table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th colspan="7" class="text-center">November 2017</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-danger">Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th class="text-warning">Sat</th>
+                            </tr>
+                            <tr>
+                                <td class="dull">29</td>
+                                <td class="dull">30</td>
+                                <td class="dull">31</td>
+                                <td class="imp">01</td>
+                                <td>02</td>
+                                <td>03</td>
+                                <td>04</td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>06</td>
+                                <td>07</td>
+                                <td class="imp">08</td>
+                                <td>09</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="imp">13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td class="imp">20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td class="imp">29</td>
+                                <td>30</td>
+                                <td class="dull">01</td>
+                                <td class="dull">02</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
                 </div>
 
             </div>
