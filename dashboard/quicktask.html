@@ -10,30 +10,49 @@
     <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background: #00B16A;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="container">
-        <ul style="list-style-type: none;" id="quickTask">
-            <li>
-                <h3>Reminder 1</h3>
-            </li>
-            <li>
-                <h3>Reminder 2</h3>
-            </li>
-            <li>
-                <h3>Reminder 3</h3>
-            </li>
-            <li>
-                <h3>Reminder 4</h3>
-            </li>
-        </ul>
-        <div class="row text-center">
-            <button type="button" class="btn btn-primary">Add New Task</button>
+        <div style="padding-top:2%;" class="row text-center">
+
+            <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8">
+                <input type="text" name="" placeholder="Add the task here" class="form-control" id="">
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+                <button type="button" class="btn btn-primary">Add New Task</button>
+            </div>
+
+
+
         </div>
+
+        <div class="row">
+            <ul style="list-style-type: none;" id="quickTask">
+                <li>
+                    <h3>Reminder 1</h3>
+                </li>
+                <li>
+                    <h3>Reminder 2</h3>
+                </li>
+                <li>
+                    <h3>Reminder 3</h3>
+                </li>
+                <li>
+                    <h3>Reminder 4</h3>
+                </li>
+            </ul>
+        </div>
+
+
+
     </div>
 
 

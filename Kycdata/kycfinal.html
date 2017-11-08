@@ -10,8 +10,19 @@
     <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background: rgb(224, 223, 223);
+        }
+        
+        #frontBody,
+        table,
+        th,
+        tr,
+        td {
+            border: 2px solid black !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,36 +30,93 @@
     <div class="container">
 
         <div class="row">
-            <h1 class="text-center">Requirement 126</h1>
+            <h1 style="color:green;" class="text-center">Requirement 126</h1>
         </div>
 
-        <div class="row">
+        <div id="frontBody" class="row">
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div style="border-right:2px  solid black;" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-                <p>client : ACME project</p>
-                <p>SkilSet:Repair Thrusters, Refuel iridium tanks, Pilot the rover</p>
-                <p>Experience : 8+ years</p>
-                <p>Location : anywhere</p>
-                <p>due date:21-12-12</p>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Client :</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">ACME Project</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">SkilSet:</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">Repair Thrusters, Refuel iridium tanks, Pilot the rover</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Experience :</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">8+ years</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Location :</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">Anywhere</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Due date:</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">21-12-12</h4>
+                    </div>
+                </div>
             </div>
-
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <p>client Spoc: Mr. Load Runner</p>
-                <p>Spoc Contact: 99999 99999</p>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Client Spoc:</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger">Mr. Load Runner</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h4 class="text-right">Spoc Contact:</h4>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h4 class="text-danger"> 99999 99999</h4>
+                    </div>
+                </div>
             </div>
-
-
         </div>
 
         <div class="row">
             <table class="table table-responsive table-bordered table-hover">
                 <thead>
-                    <th colspan="2"><a href="#">Submissions</a></th>
-                    .
-                    <th colspan="2"><a href="#">Scheduled</a></th>
-                    <th colspan="1"><a href="#">Selected</a></th>
-                    <th colspan="2"><a href="#">Onboard</a></th>
+                    <tr>
+                        <div class="btn-group btn-group-justified">
+                            <a class=" btn btn-primary">Scheduled</a>
+                            <a class=" btn btn-primary">Submissions</a>
+                            <a class=" btn btn-primary">Selected</a>
+                            <a class=" btn btn-primary">Onboard</a>
+                        </div>
+                    </tr>
+
                 </thead>
                 <tbody>
                     <tr>
@@ -126,30 +194,19 @@
                 </tbody>
             </table>
         </div>
-        <div class="row text-center">
+        <div class="row">
 
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <button class="btn btn-success">Add New</button>
+            <div style="margin-bottom:5%;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="btn-group btn-group-justified">
+                    <a class="btn btn-success ">Add New</a>
+                    <a class="btn btn-primary  ">Edit</a>
+                    <a class="btn btn-danger ">Reject</a>
+                    <a class="btn btn-primary ">Select</a>
+                    <a class="btn btn-success ">Send</a>
+                    <a class="btn btn-warning ">Mail</a>
+                </div>
             </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <button class="btn btn-danger">Reject</button>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <button class="btn btn-danger"></button>
-            </div>
-
         </div>
-    </div>
-    <div>
-
-
-
-
-        <button>Edit</button>
-        <button>Reject</button>
-        <button>Select</button>
-        <button>Send</button>
-        <button>Mail</button>
     </div>
 </body>
 
